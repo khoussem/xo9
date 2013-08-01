@@ -1,0 +1,178 @@
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "xo9";
+  src:url("fonts/xo9.eot");
+  src:url("fonts/xo9.eot?#iefix") format("embedded-opentype"),
+    url("fonts/xo9.ttf") format("truetype"),
+    url("fonts/xo9.svg#xo9") format("svg"),
+    url("fonts/xo9.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "xo9";
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "xo9";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.icon-reorder:before {
+  content: "a";
+}
+
+.icon-help:before {
+  content: "b";
+}
+
+.icon-theme:before {
+  content: "c";
+}
+
+.icon-game-center:before {
+  content: "d";
+}
+
+.icon-gift:before {
+  content: "e";
+}
+
+.icon-chevron-left:before {
+  content: "f";
+}
+
+.icon-chevron-right:before {
+  content: "g";
+}
+
+.icon-settings:before {
+  content: "h";
+}
+
+.icon-tutorial:before {
+  content: "i";
+}
+
+.icon-leaderboard:before {
+  content: "j";
+}
+
+.icon-achievement:before {
+  content: "k";
+}
+
+.icon-sound:before {
+  content: "l";
+}
+
+.icon-close:before {
+  content: "m";
+}
+
+.icon-save:before {
+  content: "n";
+}
+
+.icon-x-negative:before {
+  content: "o";
+}
+
+.icon-x-positive:before {
+  content: "p";
+}
+
+.icon-o-negative:before {
+  content: "q";
+}
+
+.icon-o-positive:before {
+  content: "r";
+}
+
+.icon-bugs:before {
+  content: "s";
+}
+
+.icon-user:before {
+  content: "t";
+}
+
+.icon-download:before {
+  content: "u";
+}
+
+.icon-twitter:before {
+  content: "v";
+}
+
+.icon-github:before {
+  content: "w";
+}
+
+.icon-dribbble:before {
+  content: "x";
+}
+
+.icon-instagram:before {
+  content: "y";
+}
+
+.icon-aota:before {
+  content: "z";
+}
+
+.icon-san-francisco:before {
+  content: "A";
+}
+
+.icon-sort-down:before {
+  content: "E";
+}
+
+.icon-geniusbot:before {
+  content: "B";
+}
+
+.icon-dumbot:before {
+  content: "C";
+}
+
+.icon-cleverbot:before {
+  content: "D";
+}
+
+.icon-sign-blank:before {
+  content: "F";
+}
+
+.icon-play-audio:before {
+  content: "G";
+}
+

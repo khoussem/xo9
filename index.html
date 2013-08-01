@@ -1,425 +1,740 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>XO&#8313; - Ultimate Tic-Tac-Toe</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="MyWay - Parallax Retina Bootstrap Multipurpose Template">
-		<meta name="author" content="awerest - interactive agency">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    	<![endif]-->
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/bootstrap-lightbox.min.css" rel="stylesheet">
-		<link href="css/m-styles.min.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
-		<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
-		<link rel="image_src" href="thumbnail.png">
-		<link rel="icon" type="image/ico" href="favicon.ico">
-	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset='64' onLoad="$.stellar();">
-		<!--<div id="preloader">-->
-			<!--<div id="status">&nbsp;</div>-->
-		<!--</div>-->
-	<!--start navigation-->
-		<div class="navbar navbar-fixed-top" id="navigation">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<a href="#intro" class="brand"><img src="img/logo.png" alt=""></a>
-					<div class="nav-collapse collapse">
-						<ul class="nav pull-right">
-							<li><a href="#intro">Intro</a></li>
-							<li><a href="#rules-top">Rules</a></li>
-							<li><a href="#features-top">Features</a></li>
-							<li><a href="#screenshots-top">Screenshots</a></li>
-							<li><a href="#support-top">Support</a></li>
-							<li><a href="#contact-top">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<section id="intro">
-			<div class="container">
-				<div class="row">
-					<div class="span8 offset2 margin25">
-						<h2>XO<sup>9</sup> <small>Ultimate Tic-Tac-Toe</small></h2>
-					</div>
-				</div>
-			</div>
-      <div class="container hidden-phone hidden-tablet">
-        <div  class="row">
-          <div class="span2 offset9">
-            <a href="#"><img src="img/aota.png"/></a>
-          </div>
+﻿
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/MobileApplication">
+<head>
+  <title>XO&#8313; - Ultimate Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play Ultimate Tic-Tac-Toe Against Friends or Robots">
+  <meta name="author" content="Joe Blau">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.css">
+  <link rel="stylesheet" href="css/xo9.min.css"/>.
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Comfortaa:400' type='text/css'>
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' type='text/css'>
+
+  <link rel="icon" type="image/ico" href="favicon.ico">
+
+  <meta name="apple-itunes-app" content="app-id=673158571">
+
+  <meta property="og:title" content="XO9 - Ultimate Tic-Tac-Toe">
+  <meta property="og:description" content="Play Ultimate Tic-Tac-Toe Against Friends or Robots">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://xo9.us/">
+  <meta property="og:image" content="http://xo9.us/img/social/xo9-hd.png">
+  <meta property="og:site_name" content="XO9 - Ultimate Tic-Tac-Toe">
+  <meta property="fb:admins" content="6216203">
+
+  <meta name="twitter:card" content="app">
+  <meta name="twitter:description" content="Play Ultimate Tic-Tac-Toe Against Friends or Robots">
+  <meta name="twitter:app:id:iphone" content="673158571">
+  <meta name="twitter:app:id:ipad" content="673158571">
+  <meta name="twitter:app:id:googleplay" content="">
+  <meta name="twitter:app:country" content="us">
+
+  <meta itemprop="name" content="XO9 - Ultimate Tic-Tac-Toe">
+  <meta itemprop="description" content="Play Ultimate Tic-Tac-Toe Against Friends or Robots">
+  <meta itemprop="image" content="http://example.com/image.jpg">
+  <meta itemprop="applicationCategory" content="Game, Multimedia">
+  <meta itemprop="applicationSubCategory" content="Puzzle Game">
+  <meta itemprop="device" content="iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPad 2, iPad 3, iPad Mini, iPod Touch">
+  <meta itemprop="operatingSystem" content="iOS6, iOS7">
+  <meta itemprop="screenshot" content="http://xo9.us/img/social/xo9-hd.pn">
+  <meta itemprop="installUrl" content="https://itunes.apple.com/us/app/xo9/id673158571?ls=1&mt=8">
+
+  <link rel="apple-touch-icon-precomposed" href="img/icons/icon.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/icon-72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/icon-114.png"/>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset='64' onLoad="$.stellar();">
+<div class="navbar navbar-fixed-top" id="navigation">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="#intro" class="brand"><img src="img/logo.png" alt=""></a>
+      <div class="nav-collapse collapse">
+        <ul class="nav pull-right">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#rules-top">Rules</a></li>
+          <li><a href="#features-top">Features</a></li>
+          <li><a href="#screenshots-top">Screenshots</a></li>
+          <li><a href="#support-top">Support</a></li>
+          <li><a href="#contact-top">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="span8 offset2 margin25">
+        <h2><span class="xo9-font">XO<sup>9</sup></span> <small>Ultimate Tic-Tac-Toe</small></h2>
+      </div>
+    </div>
+  </div>
+  <div class="container hidden-phone hidden-tablet">
+    <div  class="row">
+      <div class="span2">
+        <ul>
+          <li>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://xo9.us" data-hashtags="xo9">Tweet</a>
+          </li>
+          <li>
+            <div class="g-plusone" data-size="medium" data-href="http://xo9.us"></div>
+          </li>
+          <li>
+            <div class="fb-like" data-href="http://xo9.us" data-width="200" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="span2 offset7">
+        <a href="https://itunes.apple.com/us/app/xo9/id673158571?ls=1&mt=8"><i class="icon-aota icon-15x"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="fadeInUp delay animated hidden-phone" id="more">
+    <a href="#rules-top" class="m-btn a-btn red big icn-only"><i class="icon-sort-down icon-3x pull-left"></i></a>
+  </div>
+</section>
+<section id="rules-top">
+  <section id="rules-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+    <h1 class="header">Rules</h1>
+    <p class="header">How to play <span class="xo9-font">XO<sup>9</sup></span></p>
+  </section>
+  <section id="rules-top-mobile" class="hidden-desktop">
+    <h1 class="header">Rules</h1>
+    <p class="header">How to play <span class="xo9-font">XO<sup>9</sup></span></p>
+  </section>
+</section>
+<section id="rules">
+  <div class="container">
+    <div class="row divide">
+      <div class="span12">
+        <ul class="thumbnails">
+          <li class="span4">
+            <div class="thumbnail">
+              <table class="table table-game">
+                <tr>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                </tr>
+              </table>
+
+              <h4>9 Boards</h4>
+              <span>The game has 9 Game Boards</span>
+              <p>XO9 is comprised of 9 Game Boards.  The boards are like a regular board in the game of Tic-Tac-Toe.</p>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <table class="table table-game">
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-sign-blank xo-board-win xo-primary"></i>
+                  </td>
+                </tr>
+              </table>
+              <h4>9 Cells</h4>
+              <span>Each Board has 9 Cells</span>
+              <p>Within each board, there are 9 individual cells, like a mini Tic-Tac-Toe game.</p>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <table class="table table-game">
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg x-red-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"><i class="icon-x-positive  x-red"></i></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+              </table>
+              <h4>Play Rules</h4>
+              <span>Play in the board of the last cell</span>
+              <p>When you play in a cell, your opponent must play in the corresponding board for that cell.
+              The board for the next player will be highlighted.  If no board is highlighted, the player can
+              play in whatever cell they please.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row divide">
+      <div class="span12">
+        <ul class="thumbnails">
+          <li class="span4">
+            <div class="thumbnail">
+              <table class="table table-game">
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg x-red-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"> <i class="icon-o-positive o-blue"></i></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"><i class="icon-x-positive  x-red"></i></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+              </table>
+
+              <h4>Win A Cell</h4>
+              <span>Red Must Play Top Right</span>
+              <p>When the game starts, the first player can play anywhere.
+                Once the first player plays, the second player must play on the board of the cell that the first player chose.
+                If the board that the first player chose is already won, the second player may play anywhere.</p>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <table class="table table-game">
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"><i class="icon-o-positive o-blue"></i></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"><i class="icon-x-positive x-red"></i></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"><i class="icon-o-positive o-blue"></i></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg x-red-bg">
+                    <table><tr><td class="square"></td><td class="square v"><i class="icon-x-positive x-red"></i></td><td class="square"></td></tr><tr><td class="square h"><i class="icon-o-positive o-blue"></i></td><td class="square v h"><i class="icon-o-positive o-blue"></i></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-o-negative xo-board-win o-blue"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"> <i class="icon-o-positive o-blue"></i></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"><i class="icon-x-positive x-red"></i></td><td class="square v"></td><td class="square"><i class="icon-x-positive x-red"></i></td></tr><tr><td class="square h"><i class="icon-x-positive  x-red"></i> </td><td class="square v h"></td><td class="square h"><i class="icon-o-positive o-blue"></i></td></tr><tr><td class="square"><i class="icon-o-positive o-blue"></i></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"><i class="icon-x-positive x-red"></i></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"><i class="icon-x-positive x-red"></i></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"><i class="icon-x-positive x-red"></i></td><td class="square v"><i class="icon-o-positive o-blue"></i></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr><tr><td class="square h"></td><td class="square v h"><i class="icon-x-positive x-red"></i></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+              </table>
+              <h4>Win A Board</h4>
+              <span>Blue Wins Top Right Board with Middle Column</span>
+              <p>Win a board like winning a classic game of Tic-Tac-Toe.
+                All you need to do to win the board is to win three in a row horizontally, vertically or diagonally.
+                If either player wins a board, the board will be invalid for play for the rest of the game.
+                Any player who pics a cell on another board that corresponds to the won board will give the next player an opportunity to play in any board they chose.</p>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <table class="table table-game">
+                <tr>
+                  <td class="xo-board-bg">
+                    <i class="icon-x-negative xo-board-win x-red"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"><i class="icon-x-positive x-red"></i></td><td class="square"><i class="icon-o-positive o-blue"></i></td></tr><tr><td class="square h"><i class="icon-o-positive o-blue"></i></td><td class="square v h"><i class="icon-o-positive o-blue"></i></td><td class="square h"><i class="icon-x-positive x-red"></i></td></tr><tr><td class="square"><i class="icon-x-positive x-red"></i></td><td class="square v"><i class="icon-o-positive o-blue"></i></td><td class="square"><i class="icon-x-positive x-red"></i></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <i class="icon-o-negative xo-board-win o-blue"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <i class="icon-x-negative xo-board-win x-red"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"><i class="icon-x-positive x-red"></i></td><td class="square v"><i class="icon-o-positive o-blue"></i></td><td class="square"><i class="icon-x-positive x-red"></i></td></tr><tr><td class="square h"><i class="icon-x-positive  x-red"></i> </td><td class="square v h"></td><td class="square h"><i class="icon-o-positive o-blue"></i></td></tr><tr><td class="square"><i class="icon-o-positive o-blue"></i></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"><i class="icon-x-positive x-red"></i></td><td class="square"><i class="icon-x-positive x-red"></i></td></tr><tr><td class="square h"></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"></td><td class="square v"></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="xo-board-bg">
+                    <i class="icon-x-negative xo-board-win x-red"></i>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"><i class="icon-x-positive x-red"></i></td><td class="square v"><i class="icon-o-positive o-blue"></i></td><td class="square"></td></tr><tr><td class="square h"><i class="icon-x-positive x-red"></i></td><td class="square v h"></td><td class="square h"></td></tr><tr><td class="square"><i class="icon-o-positive o-blue"></i></td><td class="square v"><i class="icon-o-positive o-blue"></i></td><td class="square"><i class="icon-x-positive x-red"></i></td></tr></table>
+                  </td>
+                  <td class="xo-board-bg">
+                    <table><tr><td class="square"></td><td class="square v"><i class="icon-o-positive o-blue"></i></td><td class="square"><i class="icon-o-positive o-blue"></i></td></tr><tr><td class="square h"></td><td class="square v h"><i class="icon-x-positive x-red"></i></td><td class="square h"><i class="icon-o-positive o-blue"></i></td></tr><tr><td class="square"></td><td class="square v"><i class="icon-x-positive x-red"></i></td><td class="square"></td></tr></table>
+                  </td>
+                </tr>
+              </table>
+              <h4>Win The Game</h4>
+              <span>Red Wins Game with Left Column</span>
+              <p>Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers
+                in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="features-top">
+  <section id="features-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+    <h1 class="header">Features</h1>
+    <p class="header">Why play <span class="xo9-font">XO<sup>9</sup></span>?</p>
+  </section>
+  <section id="features-top-mobile" class="hidden-desktop">
+    <h1 class="header">Features</h1>
+    <p class="header">Why play <span class="xo9-font">XO<sup>9</sup></span>?</p>
+  </section>
+</section>
+<section id="features">
+<div class="container">
+<div class="row divide">
+  <div class="span12">
+    <img src="img/features/modes.png" alt="XO9 Game Modes">
+  </div>
+  <div class="span8 offset2">
+    <h1>Multiple Play Modes</h1>
+    <h4>Three Play Modes</h4>
+    <p class="center">With <span class="xo9-font">XO<sup>9</sup></span>, you get three play modes to challenge yourself and your friends.
+      Play versus the computer if you're offline or just want to practice your XO<sup>9</sup> skills.
+      Challenge a friend sharing the same phone or challenge a friend using Game Center over the network.</p>
+  </div>
+</div>
+<div class="divider"></div>
+  <div class="row divide">
+    <div class="span5 divide">
+      <h1>iPhone and iPad Ready</h1>
+      <h4>User Interface for iPhone and iPad</h4>
+      <p>XO<sup>9</sup> is designed to run on your iPad, iPod, and iPhone.  Each user interface is designed to to
+        provide you with the highest resolution for your gaming experience, by taking advantage of screen real
+        estate.  <span class="xo9-font">XO<sup>9</sup></span> also uses retina graphics give you a great gaming experience on your retina
+        device.</p>
+    </div>
+    <div class="span7">
+      <img src="img/features/universal.png" alt="XO9 Universal App">
+    </div>
+  </div>
+<div class="divider"></div>
+<div class="row divide">
+  <div class="span12">
+  </div>
+  <div class="span7 text-center">
+    <img src="img/features/bots.png" alt="XO9 Bots">
+    <h4>Press play to listen to the bots</h4>
+    <p >
+      <a onclick="playDumbot()"><i class="icon-play-audio dumbot-color icon-8x"></i></a>
+      <a onclick="playCleverbot()"><i class="icon-play-audio cleverbot-color icon-8x"></i></a>
+      <a onclick="playGeniusbot()"><i class="icon-play-audio geniusbot-color icon-8x"></i></a>
+    </p>
+    <audio id="dumbot-audio">
+      <source src="/aud/dumbot.ogg" type="audio/ogg" >
+      <source src="/aud/dumbot.mp3" type="audio/mp3" >
+      Your browser does not support the audio tag!
+    </audio>
+    <audio id="cleverbot-audio">
+      <source src="/aud/cleverbot.ogg" type="audio/ogg" >
+      <source src="/aud/cleverbot.mp3" type="audio/mp3" >
+      Your browser does not support the audio tag!
+    </audio>
+    <audio id="geniusbot-audio">
+      <source src="/aud/geniusbot.ogg" type="audio/ogg" >
+      <source src="/aud/geniusbot.mp3" type="audio/mp3" >
+      Your browser does not support the audio tag!
+    </audio>
+  </div>
+  <div class="span5 divide">
+    <h1>Robots</h1>
+    <h4>Sharpen Your Skills Against Bots</h4>
+    <p>Learn the game or perfect your <span class="xo9-font">XO<sup>9</sup></span> strategy by playing against one of three bots.</p>
+    <div class="media">
+      <i class="icon-dumbot dumbot-color icon-5x pull-left"></i>
+      <div class="media-body">
+        <h5 class="media-heading">Dumbot</h5>
+        The easiest bot and is a great opponent for kids and learning the game.
+      </div>
+    </div>
+    <div class="media">
+      <i class="icon-cleverbot cleverbot-color icon-5x pull-left"></i>
+      <div class="media-body">
+        <h5 class="media-heading">Cleverbot</h5>
+        More difficult and uses strategy in determining where to play next.
+      </div>
+    </div>
+    <div class="media">
+      <i class="icon-geniusbot geniusbot-color icon-5x pull-left"></i>
+      <div class="media-body">
+        <h5 class="media-heading">Geniusbot</h5>
+        Expert difficulty using precision strategy to select it's next move.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+<div class="row divide">
+  <div class="span5 divide">
+    <h1>Challenges</h1>
+    <h4>Unlock achievments and climb the leaderboard</h4>
+    <p><span class="xo9-font">XO<sup>9</sup></span> has lots of achievements in the game designed to test your skill.
+    Achievements range from basic rewards scuh as winning the game to strategic rewards like beating an opponent and
+    not letting them win a square</p>
+  </div>
+  <div class="span7">
+    <img src="img/features/achievements.png" alt="XO9 Achievements">
+  </div>
+</div>
+<div class="divider"></div>
+<div class="row divide">
+  <div class="span12">
+    <img src="img/features/themes.png" alt="XO9 Themes">
+    <h1>Multiple Themes</h1>
+    <h4>Theme Your Game The Way You Want</h4>
+  </div>
+  <div class="span8 offset2">
+    <p><span class="xo9-font">XO<sup>9</sup></span> comes with one theme but is upgradable to five additional themes.
+      Memorial Day comes free, but you can upgrade to get Spring Break, Halloween, New Years Eve, July 4th, and
+      Thanksgiving.</p>
+  </div>
+</div>
+</div>
+</section>
+<section id="screenshots-top">
+  <section id="screenshots-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+    <h1 class="header">Screenshots</h1>
+    <p class="header">Pictures of <span class="xo9-font">XO<sup>9</sup></span> and Press Kit</p>
+  </section>
+  <section id="screenshots-top-mobile" class="hidden-desktop">
+    <h1 class="header">Screenshots</h1>
+    <p class="header">Pictures of <span class="xo9-font">XO<sup>9</sup></span> and Press Kit</p>
+  </section>
+</section>
+<section id="screenshots">
+  <div class="container">
+    <div class="row divide">
+      <div class="span12">
+        <div class="span12">
+          <ul class="thumbnails">
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot01.png" title="Flier For Achievements">
+                <img src="/img/gallery/xo9-preview01.png" alt=""/>
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot02.png" title="Flier For Bots">
+                <img src="/img/gallery/xo9-preview02.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot03.png" title="iPad Achievements And Sound Screens">
+                <img src="/img/gallery/xo9-preview03.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot04.png" title="iPhone Halloween And July 4th Themed Games List">
+                <img src="/img/gallery/xo9-preview04.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot05.png" title="iPhone Memorial Day And July 4th Themes In Game">
+                <img src="/img/gallery/xo9-preview05.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot06.png" title="iPhone New Years Eve And Spring Break Themed Game List">
+                <img src="/img/gallery/xo9-preview06.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot07.png" title="iPad Final Score And Upgrade Screens">
+                <img src="/img/gallery/xo9-preview07.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot08.png" title="iPhone Settings And Themes">
+                <img src="/img/gallery/xo9-preview08.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot09.png" title="Macbook Website Preview Of Bots">
+                <img src="/img/gallery/xo9-preview09.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot10.png" title="iMac Website Landing Preview">
+                <img src="/img/gallery/xo9-preview10.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot11.png" title="iMac Website Rules Preview">
+                <img src="/img/gallery/xo9-preview11.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot12.png" title="Macbook Website Achievements And Themes">
+                <img src="/img/gallery/xo9-preview12.png" alt="" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-			<div class="fadeInUp delay animated hidden-phone" id="more">
-				<a href="#rules-top" class="m-btn a-btn red big icn-only"><i class="icon-sort-down icon-3x pull-left"></i></a>
-			</div>
-		</section>
-	<!--start services header-->
-		<section id="rules-top">
-	<!--start services-desktop header-->
-			<section id="rules-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-				<h1 class="header">Rules</h1>
-				<p class="header">How to play XO<sup>9</sup></p>
-			</section>
-	<!--start services-mobile header-->
-			<section id="rules-top-mobile" class="hidden-desktop">
-				<h1 class="header">Rules</h1>
-				<p class="header">How to play XO<sup>9</sup></p>
-			</section>
-		</section>
-	<!--start services-->
-		<section id="services">
-			<div class="container">
-				<div class="row divide">
-					<div class="span12">
-						<ul class="thumbnails">
-							<li class="span4">
-								<div class="thumbnail">
-                  <table class="table table-game">
-                    <tr>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td class="x-red-bg"><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                    <tr>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank  x-red"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                    <tr>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                  </table>
-
-									<h4>Win A Cell</h4>
-									<span>Red Must Play Top Right</span>
-									<p>When the game starts, the first player can play anywhere.
-                  Once the first player plays, the second player must play on the board of the cell that the first player chose.
-                  If the board that the first player chose is already won, the second player may play anywhere.</p>
-								</div>
-							</li>
-							<li class="span4">
-								<div class="thumbnail">
-                  <table class="table table-game">
-                    <tr>
-                      <td><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i></td>
-                      <td class="x-red-bg"><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td class="o-blue-win"><i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank x-red"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                    <tr>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i><br><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i><br><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                    <tr>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                  </table>
-									<h4>Win A Board</h4>
-									<span>Blue Wins Top Right Board with Middle Column</span>
-									<p>Win a board like winning a classic game of Tic-Tac-Toe.
-                  All you need to do to win the board is to win three in a row horizontally, vertically or diagonally.
-                  If either player wins a board, the board will be invalid for play for the rest of the game.
-                  Any player who pics a cell on another board that corresponds to the won board will give the next player an opportunity to play in any board they chose.</p>
-								</div>
-							</li>
-							<li class="span4">
-								<div class="thumbnail">
-                  <table class="table table-game">
-                    <tr>
-                      <td class="x-red-win"><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank o-blue"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank o-blue"></i><br><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank x-red"></i><br><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank x-red"></i></td>
-                      <td class="o-blue-win"><i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank x-red"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                    <tr>
-                      <td class="x-red-win"><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i><br><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank x-red"></i></td>
-                      <td><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank x-red"></i><br><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i><br><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank x-red"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                    <tr>
-                      <td class="x-red-win"><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank o-blue"></i></td>
-                      <td><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i> <i class="icon-sign-blank"></i><br><i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank x-red"></i></td>
-                      <td><i class="icon-sign-blank"></i> <i class="icon-sign-blank o-blue"></i> <i class="icon-sign-blank o-blue"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank o-blue"></i><br><i class="icon-sign-blank"></i> <i class="icon-sign-blank x-red"></i> <i class="icon-sign-blank"></i></td>
-                    </tr>
-                  </table>
-									<h4>Win The Game</h4>
-									<span>Red Wins Game with Left Column</span>
-									<p>Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers
-									in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae.</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-	<!--start works header-->
-		<section id="features-top">
-	<!--start works-desktop header-->
-			<section id="features-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-				<h1 class="header">Features</h1>
-				<p class="header">Why play XO<sup>9</sup>?</p>
-			</section>
-	<!--start works-mobile header-->
-			<section id="features-top-mobile" class="hidden-desktop">
-				<h1 class="header">Features</h1>
-				<p class="header">Why play XO<sup>9</sup>?</p>
-			</section>
-		</section>
-	<!--start works-->
-		<section id="works">
-			<div class="container">
-				<div class="row divide">
-					<div class="span12">
-						<img src="img/features/modes.png" alt="XO9 Game Modes">
-					</div>
-					<div class="span8 offset2">
-						<h1>Multiple Play Modes</h1>
-						<h4>Three Play Modes</h4>
-						<p class="center">With XO<sup>9</sup>, you get three play modes to challenge yourself and your friends.
-              Play versus the computer if you're offline or just want to practice your XO<sup>9</sup> skills.
-              Challenge a friend sharing the same phone or challenge a friend using Game Center over the network.</p>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="row divide">
-					<div class="span12">
-						
-						<img src="img/features/universal.png" alt="XO9 Universal App">
-						<h1>iPhone and iPad Ready</h1>
-						<h4>User Interface for iPhone and iPad</h4>
-					</div>
-					<div class="span7 offset1">
-						<p>Retina graphics give you a great gaming experience on your iPhone or iPad.
-              with (app made to work with iPad).  </p>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="row divide">
-					<div class="span12">
-					</div>
-					<div class="span7">
-						<img src="img/features/bots.png" alt="XO9 Bots">
-					</div>
-					<div class="span5 divide">
-            <h1>Offline Robots</h1>
-            <h4>Sharpen Your Skills Against Bots</h4>
-						<p>Learn the game or perfect your XO<sup>9</sup> strategy by playing against one of three bots.
-            Dumbot is the easiest bot and is a great opponent for kids and learning the game.
-            Cleverbot is more difficult and uses strategy in determining where to play next.
-            Geniusbot is for experts and uses a precision strategy to select it's next move.</p>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="row divide">
-					<div class="span5 divide">
-            <h1>Multiple Themes</h1>
-            <h4>Theme Your Game The Way You Want</h4>
-						<p>XO<sup>9</sup> comes with one theme and four upgradable themes.
-            The theme options are snow, rain, sunshine, dark, and fog.
-            Snow comes free, but you can upgrade to get the rest of the themes for customizing your game.</p>
-					</div>
-					<div class="span7">
-						<img src="img/features/themes.png" alt="XO9 Themes">
-					</div>
-				</div>
-			</div>
-		</section>
-	<!--start gallery header-->
-		<section id="screenshots-top">
-	<!--start gallery-desktop header-->
-			<section id="screenshots-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-				<h1 class="header">Screenshots</h1>
-				<p class="header">Pictures of XO<sup>9</sup> and Press Kit</p>
-			</section>
-	<!--start gallery-mobile header-->
-			<section id="screenshots-top-mobile" class="hidden-desktop">
-				<h1 class="header">Screenshots</h1>
-				<p class="header">Pictures of XO<sup>9</sup> and Press Kit</p>
-			</section>
-		</section>
-	<!--start gallery-->
-	<!--start thumbnails section-->
-		<section id="gallery">
-			<div class="container">
-				<div class="row divide">
-
-					<div class="span12">
-						<ul class="thumbnails">
-	            <li></li>
-						</ul>
-					</div>
-          <div class="span8 offset2">
-            <h1>Press Kit</h1>
-            <p class="center">Press Kit contains official images for use by press agencies as well as images for promotional use.</p>
-            <div class="span6 offset1">
-              <a href="#" class="m-btn red pull-right"><i class="icon-download-alt"></i> Download</a>
-              <p><strong>File:</strong> XO<sup>9</sup> Press Kit<br>
-                <strong>Date:</strong> 21.02.1986<br>
-                <strong>Version:</strong> 1.0
+      <div class="span8 offset2">
+        <h1>Press Kit</h1>
+        <p class="center">Press Kit contains official images for use by press agencies as well as images for promotional use.</p>
+        <div class="span6 offset1 hidden-phone hidden-tablet">
+          <a class="m-btn red pull-right"><i class="icon-download"></i> Download</a>
+          <p><strong>File:</strong> <span class="xo9-font">XO<sup>9</sup></span> Press Kit<br>
+            <strong>Date:</strong> 21.02.1986<br>
+            <strong>Version:</strong> 1.0
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="support-top">
+  <section id="support-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+    <h1 class="header">Support</h1>
+    <p class="header">Found Bugs? Lonely?</p>
+  </section>
+  <section id="support-top-mobile" class="hidden-desktop">
+    <h1 class="header">Support</h1>
+    <p class="header">Found Bugs? Lonely?</p>
+  </section>
+</section>
+<section id="support">
+  <div class="container">
+    <div class="row divide">
+      <div class="span12">
+        <ul class="thumbnails">
+          <li class="span6">
+            <div class="thumbnail">
+              <i class="icon-bugs"></i>
+              <h4>Submit Bugs</h4>
+              <span>GitHub Bug Tracker</span>
+              <p>If you run into any problems playing XO<sup>9</sup>, <a href="https://github.com/joeblau/xo9/issues">submit any issues</a> to our bug tracking system hosted on GitHub.
+                If you don't have an account or don't want to set up an account, you can email your issues to <a href="mailto:hi@xo9.us">hi@xo9.us</a> and we'll take a look at your issues.  Please remember to
+                provide as much detail as possible and screen shots if possible.</p>
+            </div>
+          </li>
+          <li class="span6">
+            <div class="thumbnail">
+              <i class="icon-user"></i>
+              <h4>Contact Dev</h4>
+              <span>Get In Touch</span>
+              <p>If you're looking to contact me for interviews, questions, or projects you can find my contact information <a href="#contact-top">here</a>.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact-top">
+  <section id="contact-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+    <h1 class="header">Contact</h1>
+    <p class="header">Hit me up on the beeper</p>
+  </section>
+  <section id="contact-top-mobile" class="hidden-desktop">
+    <h1 class="header">Contact</h1>
+    <p class="header">Hit me up on the beeper</p>
+  </section>
+</section>
+<section id="contact">
+  <div class="container">
+    <div class="row divide">
+      <div class="span4 offset4">
+        <ul class="thumbnails">
+          <li class="span4">
+            <div class="thumbnail">
+              <img src="img/team/jb.png" alt="">
+              <h4>Joe Blau</h4>
+              <span>Developer / Designer</span>
+              <p>
+                <a class="twitter" href="https://twitter.com/joe_blau"><i class="icon-twitter icon-3x"></i></a>
+                <a class="dribbble" href="https://dribbble.com/joeblau"><i class="icon-dribbble icon-3x"></i></a>
+                <a class="instagram" href="https://instagram.com/joeblau"><i class="icon-instagram icon-3x"></i></a>
+                <a class="github" href="https://github.com/joeblau"><i class="icon-github icon-3x"></i></a>
               </p>
             </div>
-          </div>
-        </div>
-			</div>
-		</section>
-	<!--end thumbnails section-->
-	<!--start lightboxes-->
-	<!--end lightbox section-->
-	<!--start team header-->
-		<section id="support-top">
-	<!--start team-desktop header-->
-			<section id="support-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-				<h1 class="header">Support</h1>
-				<p class="header">Found Bugs? Lonely?</p>
-			</section>
-	<!--start team-mobile header-->
-			<section id="support-top-mobile" class="hidden-desktop">
-				<h1 class="header">Support</h1>
-				<p class="header">Found Bugs? Lonely?</p>
-			</section>
-		</section>
-	<!--start team-->
-		<section id="team">
-      <div class="container">
-        <div class="row divide">
-          <div class="span12">
-            <ul class="thumbnails">
-              <li class="span6">
-                <div class="thumbnail">
-                  <i class="icon-bug"></i>
-                  <h4>Submit Bugs</h4>
-                  <span>Bitbucket Bug Submission</span>
-                  <p>If you run into any problems playing XO<sup>9</sup>, submit any issues to our bug tracking system hosted by Bitbucket.</p>
-                </div>
-              </li>
-              <li class="span6">
-                <div class="thumbnail">
-                  <i class="icon-user"></i>
-                  <h4>Contact Dev</h4>
-                  <span>It's Free and Always Will Be</span>
-                  <p>Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers
-                    in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-		</section>
-	<!--start contact header-->
-		<section id="contact-top">
-	<!--start contact-desktop header-->
-			<section id="contact-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-				<h1 class="header">Contact</h1>
-				<p class="header">Hit me up on the beeper</p>
-			</section>
-	<!--start contact-mobile header-->
-			<section id="contact-top-mobile" class="hidden-desktop">
-				<h1 class="header">Contact</h1>
-				<p class="header">Hit me up on the beeper</p>
-			</section>
-		</section>
-	<!--start contact-->
-		<section id="contact">
-      <div class="container">
-        <div class="row divide">
-          <div class="span8 offset2">
-            <h1>Joe Blau</h1>
-            <p class="center">Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are,
-              the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae.
-              The rset can be a toatl mses and you can sitll raed it wouthit porbelm.
-              Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe. Awesomeness, true story!</p>
-          </div>
-          <div class="span4 offset4">
-            <ul class="thumbnails">
-              <li class="span4">
-                <div class="thumbnail">
-                  <img src="img/team/jb.png" alt="">
-                  <h4>Joe Blau</h4>
-                  <span>Developer / Designer</span>
-                  <p>
-                    <a class="twitter" href="https://twitter.com/joe_blau"><i class="icon-twitter icon-3x"></i></a>
-                    <a class="dribbble" href="https://dribbble.com/joeblau"><i class="icon-dribbble icon-3x"></i></a>
-                    <a class="instagram" href="https://instagram.com/joeblau"><i class="icon-instagram icon-3x"></i></a>
-                    <a class="github" href="https://github.com/joeblau"><i class="icon-github-alt icon-3x"></i></a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+    </div>
+  </div>
+</section>
+<section id="footer">
+  <div class="container">
+    <div class="row divide">
+      <div class="span12 text-center">
+        <ul class="list-inline">
+          <li>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://xo9.us" data-hashtags="xo9">Tweet</a>
+          </li>
+          <li>
+            <div class="g-plusone" data-size="medium" data-href="http://xo9.us"></div>
+          </li>
+          <li>
+            <div class="fb-like" data-href="http://xo9.us" data-width="200" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+          </li>
+        </ul>
       </div>
-		</section>
-	<!--start footer-->
-		<section id="footer">
-			<div class="container">
-				<div class="row divide">
-
-	<!--footer menu-->
-					<div class="span12 text-center">
-						<ul class="list-inline">
-							<li><a href="#intro">Intro</a></li>
-							<li><a href="#rules-top">Rules</a></li>
-							<li><a href="#features-top">Features</a></li>
-							<li><a href="#screenshots-top">Screenshots</a></li>
-							<li><a href="#support-top">Support</a></li>
-						</ul>
-					</div>
-	<!--link to social networks-->
-					<div class="span12 text-center">
-						<ul class="list-inline">
-							<li><a class="facebook" href="http://www.facebook.com/xo9" target="_blank"><i class="icon-facebook icon-2x"></i> </a></li>
-							<li><a class="twitter" href="http://www.twitter.com/xo9" target="_blank"><i class="icon-twitter icon-2x"></i> </a></li>
-						</ul>
-					</div>
-  <!--logo and copyright-->
-          <div class="span12 text-center">
-            <p><a href="#intro" class="brand"><img src="img/logo.png" alt=""></a> 2013 © Nubesoft LLC.</p><br>
-          </div>
-				</div>	
-			</div>
-		</section>
-	<!--latest jQuery-->
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<!--main bootstrap js-->
-		<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<!--custom js-->
-		<script src="js/custom.js" type="text/javascript"></script>
-	<!--preloader-->
-		<script type="text/javascript">
-			$(window).load(function() {
-				$("#status").fadeOut();
-				$("#preloader").delay(350).fadeOut("fast");
-			})
-		</script>
-	<!--retina support-->
-		<script src="js/retina.js" type="text/javascript"></script>
-	<!--smooth scroll on page-->
-		<script src="js/jquery.easing-1.3.pack.js" type="text/javascript"></script>
-	<!--custom scrollbar-->
-		<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
-	<!--parallax-->
-		<script src="js/jquery.stellar.js" type="text/javascript"></script>
-	<!--contact-->
-		<script src="js/jquery.form.js"></script>		
-	<!--gallery lightbox-->
-		<script src="js/bootstrap-lightbox.min.js"></script>
-	</body>
+      <div class="span12 text-center">
+        <ul class="list-inline">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#rules-top">Rules</a></li>
+          <li><a href="#features-top">Features</a></li>
+          <li><a href="#screenshots-top">Screenshots</a></li>
+          <li><a href="#support-top">Support</a></li>
+        </ul>
+      </div>
+      <div class="span12 text-center">
+        <p><a href="#intro" class="brand"><img src="img/logo.png" alt=""></a> 2013 © Nubesoft LLC.</p><br>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.0.1/retina.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js"></script>
+<script src="js/xo9.min.js" type="text/javascript"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=435606773215443";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-3865076-7', 'xo9.us');
+  ga('send', 'pageview');
+</script>
+</body>
 </html>
