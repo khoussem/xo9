@@ -274,28 +274,28 @@ p.header {
 	background: #eee url(../img/backgrounds/sf_bg.jpg) no-repeat center;
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  #rules-top-desktop {
-    background: #eee url(../img/backgrounds/rules_bg@2x.jpg) fixed no-repeat center;
-    background-size: cover;
-  }
-  #features-top-desktop {
-    background: #eee url(../img/backgrounds/icons_bg@2x.jpg) fixed no-repeat center;
-    background-size: cover;
-  }
-  #screenshots-top-desktop {
-    background: #eee url(../img/backgrounds/icons_bg@2x.jpg) fixed no-repeat center;
-    background-size: cover;
-  }
-  #support-top-desktop {
-    background: #eee url(../img/backgrounds/support_bg@2x.jpg) fixed no-repeat center;
-    background-size: cover;
-  }
-  #contact-top-desktop {
-    background: #eee url(../img/backgrounds/sf_bg@2x.jpg) fixed no-repeat center;
-    background-size: cover;
-  }
-}
+/*@media all and (-webkit-min-device-pixel-ratio: 1.5) {*/
+  /*#rules-top-desktop {*/
+    /*background: #eee url(../img/backgrounds/rules_bg@2x.jpg) fixed no-repeat center;*/
+    /*background-size: cover;*/
+  /*}*/
+  /*#features-top-desktop {*/
+    /*background: #eee url(../img/backgrounds/icons_bg@2x.jpg) fixed no-repeat center;*/
+    /*background-size: cover;*/
+  /*}*/
+  /*#screenshots-top-desktop {*/
+    /*background: #eee url(../img/backgrounds/icons_bg@2x.jpg) fixed no-repeat center;*/
+    /*background-size: cover;*/
+  /*}*/
+  /*#support-top-desktop {*/
+    /*background: #eee url(../img/backgrounds/support_bg@2x.jpg) fixed no-repeat center;*/
+    /*background-size: cover;*/
+  /*}*/
+  /*#contact-top-desktop {*/
+    /*background: #eee url(../img/backgrounds/sf_bg@2x.jpg) fixed no-repeat center;*/
+    /*background-size: cover;*/
+  /*}*/
+/*}*/
 
 #rules-top-desktop,
 #features-top-desktop,
@@ -754,7 +754,7 @@ input[type="text"], select, textarea {
 
 /* ==== Color Chips ==== */
 
-*, ::after, ::before {
+div.colors-explore, ::after, ::before {
 
   -webkit-transition: all .2s linear 0;
   -moz-transition: all .2s linear 0;
