@@ -46,14 +46,14 @@ $(document).ready(function() {
   //collapse menu on click on mobile and tablet devices
   $('.nav a').click(function () { $(".nav-collapse").collapse("hide") });
 
-  function playDumbot(){
-    document.getElementById('dumbot-audio').play();
-  }
-  function playCleverbot(){
-    document.getElementById('cleverbot-audio').play();
-  }
-  function playGeniusbot() {
-    document.getElementById('geniusbot-audio').play();
-  }
-});
 
+});
+function playDumbot(){
+  document.getElementById('dumbot-audio').play();
+}
+function playCleverbot(){
+  document.getElementById('cleverbot-audio').play();
+}
+function playGeniusbot() {
+  document.getElementById('geniusbot-audio').play();
+}
