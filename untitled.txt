@@ -1,0 +1,237 @@
+1. http://instagram.com/p/d2YO4Dyvfz/ or 2. http://instagram.com/p/d2meDOSvY5/ for xo9.us
+
+4 bar intro
+20 bars
+
+
+
+
+
+
+"A few of you might have seen some shots on the web. And that's cool, because everyone is really excited about this."
+
+
+010f3a0cdeb0e757b27ce8673e37a544 // Joe Blau
+
+
+Benjamin Dollar
+Steve Goldstein
+
+Creflo Dollar
+Benjamin Billz
+Chris Moneymaker (poker player)
+Ben Baller
+Richie Rich
+Richie Goldstein
+
+
+IAP at 2 matches
+Cap at 30 matches
+
+
+evil apples
+
+
+To support this vision, I've relocated from Washington D.C. to San Francisco to accelerate my personal development.  
+
+
+
+GKTurnBasedEventListener - https://developer.apple.com/library/prerelease/ios/documentation/GameKit/Reference/GKTurnBasedEventListener_Ref/Reference/Reference.html#//apple_ref/occ/intf/GKTurnBasedEventListener
+
+Handling Exchanges
+– player:receivedExchangeCancellation:forMatch:  required method
+– player:receivedExchangeReplies:forCompletedExchange:forMatch:  required method
+– player:receivedExchangeRequest:forMatch:  required method
+Handling Match Related Events
+– player:receivedTurnEventForMatch:didBecomeActive:  required method
+– player:didRequestMatchWithPlayers:  required method
+– player:matchEnded:  required method
+
+
+GKChallengeListener - https://developer.apple.com/library/prerelease/ios/documentation/GameKit/Reference/GKEventListener_Ref/Reference/Reference.html#//apple_ref/occ/intf/GKChallengeListener
+
+Responding to a Challenge
+– player:didReceiveChallenge:  required method
+– player:wantsToPlayChallenge:  required method
+Completing a Challenge
+– player:didCompleteChallenge:issuedByFriend:  required method
+– player:issuedChallengeWasCompleted:byFriend:  required method
+
+
+GKInviteEventListener - https://developer.apple.com/library/prerelease/ios/documentation/GameKit/Reference/GKInviteEventHandler_ref/Reference/Reference.html#//apple_ref/occ/intf/GKInviteEventListener
+
+Starting a New Match
+– player:didAcceptInvite:  required method
+– player:didRequestMatchWithPlayers:  required method
+
+
+
+
+
+//- (void)enterNewGame:(GKTurnBasedMatch *)match{
+//  NSLog(@"enterNewGame");
+//}
+//- (void)layoutMatch:(GKTurnBasedMatch *)match {
+//  NSLog(@"layoutMatch");
+//  [self.collectionView setUserInteractionEnabled:NO];
+//}
+//- (void)layoutMatchFirstRound:(GKTurnBasedMatch *)match {
+//  NSLog(@"layoutMatchFirstRound");
+//  [self.collectionView setUserInteractionEnabled:NO];
+//}
+//- (void)takeTurn:(GKTurnBasedMatch *)match {
+//  NSLog(@"takeTurn");
+//  [self.collectionView setUserInteractionEnabled:YES];
+//  if ([match.currentParticipant.playerID isEqualToString:[GKLocalPlayer localPlayer].playerID]){
+//    NSString *locationString = [[NSString alloc] initWithData:match.matchData encoding:NSUTF8StringEncoding];
+//    if ([locationString length] > 0){
+//      NSArray *locations = [locationString componentsSeparatedByString: @","];
+//      XO9Location *opponentPlayed = [[XO9Location alloc] initLocationWithBoardRow:[[locations objectAtIndex:0] intValue]
+//                                                                         boardCol:[[locations objectAtIndex:1] intValue]
+//                                                                          cellRow:[[locations objectAtIndex:2] intValue]
+//                                                                          cellCol:[[locations objectAtIndex:3] intValue]];
+//      [[XO9Singleton sharedManager] play:PLAY_THEY_WIN_CELL];
+//      [self updateCellPlayMoveReloadCollection:opponentPlayed];
+//    }
+//  }
+//}
+//- (void)recieveEndGame:(GKTurnBasedMatch *)match {
+//  NSLog(@"recieveEndGame");
+//}
+//- (void)sendNotice:(NSString *)notice
+//          forMatch:(GKTurnBasedMatch *)match {
+//  NSLog(@"sendNotice");
+//}
+//- (void)firstRound {
+//  NSLog(@"firstRound");
+////  [self performSegueWithIdentifier:@"UnwindFromFirstRoundNetworkGame" sender:self];
+////  [self takeTurn:firstRoundMatch];
+//}
+//- (void)newRound {
+//  NSLog(@"newRound");
+//}
+//- (void)hideGameView {
+//  NSLog(@"hideGameView");
+//  [self.navigationController popViewControllerAnimated:NO];
+//}
+
+
+
+#pragma mark - GKLocalPlayerListener
+
+// GKTurnBasedEventListener
+- (void) player:(GKPlayer *)player receivedExchangeCancellation:(GKTurnBasedExchange *)exchange forMatch:(GKTurnBasedMatch *)match {
+  NSLog(@"receivedExchangeCancellation");
+}
+- (void) player:(GKPlayer *)player receivedExchangeReplies:(NSArray *)replies forCompletedExchange:(GKTurnBasedExchange *)exchange forMatch:(GKTurnBasedMatch *)match {
+  NSLog(@"receivedExchangeReplies");
+}
+- (void) player:(GKPlayer *)player receivedExchangeRequest:(GKTurnBasedExchange *)exchange forMatch:(GKTurnBasedMatch *)match {
+  NSLog(@"receivedExchangeRequest");
+}
+
+- (void) player:(GKPlayer *)player receivedTurnEventForMatch:(GKTurnBasedMatch *)match didBecomeActive:(BOOL)didBecomeActive {
+  NSLog(@"receivedTurnEventForMatch %@",match.matchID);
+}
+- (void)player:(GKPlayer *)player didRequestMatchWithPlayers:(NSArray *)playerIDsToInvite {
+  NSLog(@"didRequestMatchWithPlayers");
+}
+- (void)player:(GKPlayer *)player matchEnded:(GKTurnBasedMatch *)match {
+  NSLog(@"matchEnded");
+}
+
+// GKChallengeListener
+- (void)player:(GKPlayer *)player didCompleteChallenge:(GKChallenge *)challenge issuedByFriend:(GKPlayer *)friendPlayer {
+  NSLog(@"didCompleteChallenge");
+}
+- (void)player:(GKPlayer *)player didReceiveChallenge:(GKChallenge *)challenge {
+  NSLog(@"didReceiveChallenge");
+}
+- (void)player:(GKPlayer *)player issuedChallengeWasCompleted:(GKChallenge *)challenge byFriend:(GKPlayer *)friendPlayer {
+  NSLog(@"issuedChallengeWasCompleted");
+}
+- (void)player:(GKPlayer *)player wantsToPlayChallenge:(GKChallenge *)challenge {
+  NSLog(@"wantsToPlayChallenge");
+}
+
+// GKInviteEventHandler
+- (void)player:(GKPlayer *)player didAcceptInvite:(GKInvite *)invite {
+  NSLog(@"didAcceptInvite");
+}
+
+
+
+
+
+
+//#pragma mark - GameCenter Manager
+//- (void)gameCenterManager:(GameCenterManager *)manager authenticateUser:(UIViewController *)gameCenterLoginController{
+//  
+//}
+
+
+
+
+//- (void)loadExisitingGame:(NSString *)matchID {
+//  // Check if we have the game archived
+//  NSData *myEncodedObject = [defaults objectForKey:matchID];
+//  game = (XO9Game *)[NSKeyedUnarchiver unarchiveObjectWithData: myEncodedObject];
+//
+//  if (currentMatch.currentParticipant.lastTurnDate == nil){
+//    NSLog(@"initizlie players");
+//    [self initilizePlayers];
+//  }  
+//  NSLog(@"IDS %@ %@ %@", currentMatch.currentParticipant.playerID, [GKLocalPlayer localPlayer].playerID, game.currentPlayer.gameCenterPlayerID);
+//  [self.collectionView reloadData];
+//  if ([currentMatch.currentParticipant.playerID isEqualToString:[GKLocalPlayer localPlayer].playerID] &&
+//      (game.currentPlayer.gameCenterPlayerID == nil || game.currentPlayer.gameCenterPlayerID == [GKLocalPlayer localPlayer].playerID)) {
+//    [self takeTurn:currentMatch];
+//  } else {
+//        // Layout match
+//    [self.collectionView setUserInteractionEnabled:NO];
+//
+//
+//  }
+//
+//  [GKTurnBasedMatch loadMatchWithID:matchID withCompletionHandler:^(GKTurnBasedMatch *match, NSError *error){
+//    [defaults synchronize];
+//    NSData *myEncodedObject = [defaults objectForKey:matchID];
+//    game = (XO9Game *)[NSKeyedUnarchiver unarchiveObjectWithData: myEncodedObject];
+//    
+//  }];
+
+
+//  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//  if ([defaults objectForKey:matchID] != nil){
+//    NSData *myEncodedObject = [defaults objectForKey:matchID];
+//    game = (XO9Game *)[NSKeyedUnarchiver unarchiveObjectWithData: myEncodedObject];
+//    
+//    // If we are loading a game that we were invited to, initialize the game and save it
+//    if (game.playerX.gameCenterPlayerID == nil || game.playerO.gameCenterPlayerID == nil){
+//      [self initializeGameCenterGame:MULTI_PLAYER_ONE_PHONE gameMode:GAME_MODE_2_PLAYER_2_PHONE matchID:matchID];
+//    }
+//    if (game.gameType == MULTI_PLAYER_TWO_PHONES){
+//
+//          currentMatch = match;
+//
+//          NSLog(@"Match status %ld", (long)match.status);
+//          [self.collectionView reloadData];
+//        } else {
+//          NSLog(@"Coudln't find match");
+//        }
+//    }
+//  } else {
+//    NSLog(@"Could not load game");
+//  }
+//}
+
+//  else {
+//    if ([match.currentParticipant.playerID
+//         isEqualToString:[GKLocalPlayer localPlayer].playerID]) {
+//      // it's not the current match and it's our turn now
+//      //      [self sendNotice:@"It's your turn for another match" forMatch:match];
+//    } else {
+//      // it's the not current match, and it's someone else's
+//      // turn
+//    }
+//  }

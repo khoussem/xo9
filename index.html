@@ -49,14 +49,6 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/icon-114.png"/>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset='64' onLoad="$.stellar();">
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=173146526205177";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div class="navbar navbar-fixed-top" id="navigation">
   <div class="navbar-inner">
     <div class="container">
@@ -98,7 +90,7 @@
             <div class="g-plusone" data-size="medium" data-href="http://xo9.us"></div>
           </li>
           <li>
-            <div class="fb-like" data-href="http://xo9.us" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fxo9.us&amp;width=100&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=173146526205177" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
           </li>
         </ul>
       </div>
@@ -165,7 +157,7 @@
               </table>
 
               <h4>9 Boards</h4>
-              <span>The game has 9 Game Boards</span>
+              <span>The Tame Has 9 Game Boards</span>
               <p>XO9 is comprised of 9 Game Boards.  The boards are like a regular board in the game of Tic-Tac-Toe.</p>
             </div>
           </li>
@@ -207,7 +199,7 @@
                 </tr>
               </table>
               <h4>9 Cells</h4>
-              <span>Each Board has 9 Cells</span>
+              <span>Each Board Has 9 Cells</span>
               <p>Within each board, there are 9 individual cells, like a mini Tic-Tac-Toe game.</p>
             </div>
           </li>
@@ -248,11 +240,10 @@
                   </td>
                 </tr>
               </table>
-              <h4>Play Rules</h4>
-              <span>Play in the board of the last cell</span>
-              <p>When you play in a cell, your opponent must play in the corresponding board for that cell.
-              The board for the next player will be highlighted.  If no board is highlighted, the player can
-              play in whatever cell they please.</p>
+              <h4>Win A Cell</h4>
+              <span>Win The Cell In A Board</span>
+              <p>The Player X plays a cell in one of the boards. Player O must play in the
+               board that corresponds to the cell that Player X played in.</p>
             </div>
           </li>
         </ul>
@@ -299,11 +290,11 @@
                 </tr>
               </table>
 
-              <h4>Win A Cell</h4>
-              <span>Red Must Play Top Right</span>
-              <p>When the game starts, the first player can play anywhere.
-                Once the first player plays, the second player must play on the board of the cell that the first player chose.
-                If the board that the first player chose is already won, the second player may play anywhere.</p>
+              <h4>Set Next Board</h4>
+              <span>Play In The Highlighted Board</span>
+              <p>Player O plays a cell in the highlighted board set by Player X.
+              Once Player O plays a cell, Player X must play in the board that corresponds
+              to the cell Player O played in.</p>
             </div>
           </li>
           <li class="span4">
@@ -344,11 +335,11 @@
                 </tr>
               </table>
               <h4>Win A Board</h4>
-              <span>Blue Wins Top Right Board with Middle Column</span>
+              <span>Blue Wins Top Right Board</span>
               <p>Win a board like winning a classic game of Tic-Tac-Toe.
                 All you need to do to win the board is to win three in a row horizontally, vertically or diagonally.
                 If either player wins a board, the board will be invalid for play for the rest of the game.
-                Any player who pics a cell on another board that corresponds to the won board will give the next player an opportunity to play in any board they chose.</p>
+                A player who plays a cell which corresponds to a board that is won gives the next player an opportunity to play any cell on any board.</p>
             </div>
           </li>
           <li class="span4">
@@ -390,8 +381,8 @@
               </table>
               <h4>Win The Game</h4>
               <span>Red Wins Game with Left Column</span>
-              <p>Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers
-                in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae.</p>
+              <p>Winning three boards in a row wins you the game.
+              Red won the game by winning the column on the left</p>
             </div>
           </li>
         </ul>
@@ -487,7 +478,7 @@
       <i class="icon-geniusbot geniusbot-color icon-5x pull-left"></i>
       <div class="media-body">
         <h5 class="media-heading">Geniusbot</h5>
-        Expert difficulty using precision strategy to select it's next move.
+        Expert difficulty using precision strategy to select its next move.
       </div>
     </div>
   </div>
@@ -537,63 +528,103 @@
         <div class="span12">
           <ul class="thumbnails">
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot01.png" title="Flier For Achievements">
-                <img src="/img/gallery/xo9-preview01.png" alt=""/>
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss01.png" title="Flier For Achievements">
+                <img src="/img/gallery/xo9pv01.png" alt=""/>
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot02.png" title="Flier For Bots">
-                <img src="/img/gallery/xo9-preview02.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss02.png" title="Flier For Bots">
+                <img src="/img/gallery/xo9pv02.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot03.png" title="iPad Achievements And Sound Screens">
-                <img src="/img/gallery/xo9-preview03.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss03.png" title="XO9 Screenshots">
+                <img src="/img/gallery/xo9pv03.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot05.png" title="iPhone Halloween And July 4th Themed Games List">
-                <img src="/img/gallery/xo9-preview05.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss04.png" title="XO9 Dark Screenshots">
+                <img src="/img/gallery/xo9pv04.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot06.png" title="iPhone Memorial Day And July 4th Themes In Game">
-                <img src="/img/gallery/xo9-preview06.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss05.png" title="iPad Game List And Game Center Achievements">
+                <img src="/img/gallery/xo9pv05.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot07.png" title="iPhone New Years Eve And Spring Break Themed Game List">
-                <img src="/img/gallery/xo9-preview07.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss06.png" title="iPad In App Purchase And Themes">
+                <img src="/img/gallery/xo9pv06.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot08.png" title="iPad Final Score And Upgrade Screens">
-                <img src="/img/gallery/xo9-preview08.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss07.png" title="iPhone New Years Theme Cleverbot And Geniusbot">
+                <img src="/img/gallery/xo9pv07.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot09.png" title="iPhone Settings And Themes">
-                <img src="/img/gallery/xo9-preview09.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss08.png" title="iPhone Halloween Theme Cleverbot And Dumbot">
+                <img src="/img/gallery/xo9pv08.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot10.png" title="Macbook Website Preview Of Bots">
-                <img src="/img/gallery/xo9-preview10.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss09.png" title="iPhone Halloween Theme Games And July 4th Theme Games">
+                <img src="/img/gallery/xo9pv09.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot11.png" title="iMac Website Landing Preview">
-                <img src="/img/gallery/xo9-preview11.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss10.png" title="iPhone Spring Break Theme Games And New Years Eve Theme Games">
+                <img src="/img/gallery/xo9pv10.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot12.png" title="iMac Website Rules Preview">
-                <img src="/img/gallery/xo9-preview12.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss11.png" title="iPhone Settings And Themes">
+                <img src="/img/gallery/xo9pv11.png" alt="" />
               </a>
             </li>
             <li class="span3">
-              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9-screenshot13.png" title="Macbook Website Achievements And Themes">
-                <img src="/img/gallery/xo9-preview13.png" alt="" />
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss12.png" title="iPhone Tutorial And Game Center Authentication">
+                <img src="/img/gallery/xo9pv12.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss13.png" title="iPhone Memorial Day Theme and July 4th Theme">
+                <img src="/img/gallery/xo9pv13.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss14.png" title="iPhone Leader Board And Achievements">
+                <img src="/img/gallery/xo9pv14.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss15.png" title="iPad Final Score and Game Center Login">
+                <img src="/img/gallery/xo9pv15.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss16.png" title="iPhone Games And iPhone Halloween Theme Games">
+                <img src="/img/gallery/xo9pv16.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss17.png" title="Macbook Website Preview Of Bots">
+                <img src="/img/gallery/xo9pv17.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss18.png" title="Macbook Website Landing Preview">
+                <img src="/img/gallery/xo9pv18.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss19.png" title="iMac Website Rules Preview">
+                <img src="/img/gallery/xo9pv19.png" alt="" />
+              </a>
+            </li>
+            <li class="span3">
+              <a class="fancybox-thumb" rel="fancybox-thumb" href="/img/gallery/xo9ss20.png" title="iMac Website Achievements And Themes">
+                <img src="/img/gallery/xo9pv20.png" alt="" />
               </a>
             </li>
           </ul>
@@ -603,9 +634,9 @@
         <h1>Press Kit</h1>
         <p class="center">Press Kit contains official images for use by press agencies as well as images for promotional use.</p>
         <div class="span6 offset1 hidden-phone hidden-tablet">
-          <a class="m-btn red pull-right"><i class="icon-download"></i> Download</a>
+          <a href="https://db.tt/8bwchsHW" class="m-btn red pull-right"><i class="icon-download"></i> Download</a>
           <p><strong>File:</strong> <span class="xo9-font">XO<sup>9</sup></span> Press Kit<br>
-            <strong>Date:</strong> 21.02.1986<br>
+            <strong>Date:</strong> 09.24.2013<br>
             <strong>Version:</strong> 1.0
           </p>
         </div>
@@ -668,8 +699,7 @@
         <ul class="thumbnails">
           <li class="span4">
             <div class="thumbnail">
-              <img src="img/team/jb.png" alt="">
-              <h4>Joe Blau</h4>
+              <img src="img/team/jb.gif" alt="">
               <span>Developer / Designer</span>
               <p>
                 <a class="twitter" href="https://twitter.com/joe_blau"><i class="icon-twitter icon-3x"></i></a>
@@ -696,7 +726,7 @@
             <div class="g-plusone" data-size="medium" data-href="http://xo9.us"></div>
           </li>
           <li>
-            <div class="fb-like" data-href="http://xo9.us" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fxo9.us&amp;width=100&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=173146526205177" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
           </li>
         </ul>
       </div>
